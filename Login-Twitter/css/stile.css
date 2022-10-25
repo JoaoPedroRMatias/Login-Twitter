@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container{
+    background-color: rgb(0, 0, 0);
+    max-width: 350px;
+    min-width: 50vh;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+main h2{
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 2.5rem;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.input-field{
+    margin-bottom: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0.8rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.input-field a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.input-field:hover{
+    background-color: rgb(234, 234, 234);
+    transition: 1s;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.divisor{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 14px;
+}
+.divisor::after{
+    content:"";
+    width:180px;
+    line-height:40px;
+    height:1px;
+    background:#bcbcbc;
+    position:absolute;
+    top: 9px;
+    left:0;
+} 
+.divisor::before{
+    content:"";
+    width:180px;
+    line-height:40px;
+    height:1px;
+    background:#bcbcbc;
+    position:absolute;
+    top: 9px;
+    right:0;
+} 
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.input-user{
+    text-align: center;
+    outline: 0.1px solid #787878;
+}
+.input-user input{
+    width: 100%;
+    padding: 1.2rem 6rem;
+    border-radius: 3px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    outline: none;
+}
+
+.input-user:hover{
+    outline: 0.1px solid #00acee;
+}
+
+.footer-button{
+    margin-top: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.next{
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.next input{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.next:hover{
+    outline: 3px solid #00acee;
+    transition: 1s;
+}
+
+.nopassword{
+    margin-bottom: 3rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+    outline: 0.1px solid white;
+}
+.nopassword input{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.down-footer{
+    color: #bcbcbc;
+}
+.down-footer span{
+    color: #00acee;
+    cursor: pointer;
+}
+
+.fa-twitter{
+    text-align: center;
+    width: 100%;
+    color: #00acee;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
