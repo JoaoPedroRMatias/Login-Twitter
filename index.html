@@ -4,42 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/20a20b0941.js" crossorigin="anonymous"></script>
+
     <link rel="icon" type="imagem/x-icon" href="/img/twitterIcon.ico">
     <link rel="stylesheet" href="css/stile.css">
     <title>Entrar no Twitter / Twitter</title>
 </head>
+
 <body>
-    <div class="container">
-        <img src="/img/twitterLogo.png" alt="Twitter Logo" id="logott">
+    <main class="container">
+        <i class="fa-brands fa-twitter"></i>
+
         <h2>Entrar no Twitter</h2>
-        
-        <div class="userAccount">
-            <button class="google">
-                <span>Fazer login com o Google</span>
-            </button>
-            <button class="apple">
-                <span>Entrar com Apple</span>
-            </button>
+
+        <form action="">
+            <div class="input-field">
+                <a href="#">
+                    <i class="fa-brands fa-google"></i>
+                    Fazer login com o Google
+                </a>
+            </div>
+            <div class="input-field">
+                <a href="#">
+                    <i class="fa-brands fa-apple"></i>
+                    Entrar com Apple
+                </a>
+            </div>
+        </form>
+
+        <div class="divisor">
+            <span>OU</span>
+        </div>
+    
+        <div class="footer">
+            <div class="input-user">
+                <input type="text" name="user" id="user" placeholder="Celular, e-mail ou nome de usuário">
+            </div>
+
+            <div class="footer-button">
+                <div class="next">
+                    <input type="submit" id="next" name="next" value="Avançar">
+                </div>
+                <div class="nopassword">
+                    <input type="submit" id="nopassword" name="nopassword" value="Esqueceu sua senha?">
+                </div>
+            </div>
         </div>
 
-        <p>OU</p>
-
-        <div class="user">
-            <input type="text" placeholder="Celular, e-mail ou nome de usuário">
+        <div class="down-footer">
+            <p>Não tem uma conta? <span id="sigup">Inscreva-se</span></p>
         </div>
-
-        <div class="entry">
-            <button class="next">
-                <span>Avançar</span>
-            </button>
-            <button class="recover">
-                <span>Esqueceu sua senha?</span>
-            </button>
-        </div>
-
-        <div class="signup">
-            <p>Não tem uma conta? <span>Inscreva-se</span></p>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
